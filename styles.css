@@ -1,32 +1,30 @@
 
+/* GENERAL */
+
 body {
   width: 100%;
-}
-
-#nav-ban {
-  background: rgba(39, 183, 255, 0.697);
-}
-
-#name {
-  padding-left: 21px;
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 400;
-}
-
-#menu-items {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 400;
-  padding-left: 29px;
 }
 
 a:hover {
   opacity: 0.5;
 }
 
-#hamb {
-  margin-right: 21px;
-  margin-left: 29px;
+/* NAV BAN */
+
+#nav-ban {
+  background: rgba(39, 183, 255, 0.697);
+  height: 60px;
+  width: 100%;
 }
+
+#menu-items {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+/* INTRO - BIO */
 
 #intro p {
   padding-left: 30px;
@@ -44,6 +42,8 @@ p mark {
   color: rgb(39, 183, 255);
   background: white;
 }
+
+/* PROJECTS */
 
 #spotify-player {
   padding-left: 15px;
@@ -97,6 +97,8 @@ p mark {
   color: white;
   text-align: left;
 }
+
+/* @MEDIA RULES */
 
 
 /* Extra small devices (phones, 600px and down) */
