@@ -1,0 +1,111 @@
+
+body {
+  width: 100%;
+}
+
+#nav-ban {
+  background: rgba(39, 183, 255, 0.697);
+}
+
+#name {
+  padding-left: 21px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+}
+
+#menu-items {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  padding-left: 29px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+#hamb {
+  margin-right: 21px;
+  margin-left: 29px;
+}
+
+#intro p {
+  padding-left: 30px;
+  padding-top: 29px;
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p mark {
+  color: rgb(39, 183, 255);
+  background: white;
+}
+
+#spotify-player {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#grid-container {
+  padding-left: 30px;
+}
+
+.grid {
+  width: 100%;
+}
+
+.grid-item {
+  /* width: 410px; */
+  width: auto;
+  height: 500px;
+  margin: 10px;
+  float: left;
+  /*background: rgb(0, 174, 255);*/
+  background: rgba(39, 183, 255, 0.697);
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.project-title {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  font-weight: 600;
+
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  text-align: left;
+}
+
+.project-info {
+  font-family: 'Source Code Pro', monospace;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+
+  text-align: left;
+}
+
+#role {
+  color: white;
+  text-align: left;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
