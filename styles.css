@@ -47,7 +47,6 @@ p mark {
 
 #spotify-player {
   padding-left: 15px;
-  padding-right: 15px;
 }
 
 #grid-container {
@@ -60,9 +59,11 @@ p mark {
 
 .grid-item {
   /* width: 410px; */
+  max-width: 100%;
   width: auto;
   height: 500px;
   margin: 10px;
+  border-left: 10px;
   float: left;
   /*background: rgb(0, 174, 255);*/
   background: rgba(39, 183, 255, 0.697);
@@ -102,7 +103,12 @@ p mark {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+  .grid-item {width: 350px;}
+  .grid-item img {max-height: 200px;}
+  #intro p {font-size: 17px;}
+  #nav-ban {min-width: 400px;}
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
 /* Medium devices (landscape tablets, 768px and up) */
