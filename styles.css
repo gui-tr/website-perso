@@ -18,7 +18,7 @@ body {
 #nav-ban {
   background-color: white;
   background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   height: 60px;
   width: 100%;
 
@@ -51,11 +51,10 @@ body {
 /* INTRO - BIO */
 
 #intro {
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   background-color: #1900ff;
   background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #intro p {
@@ -90,15 +89,28 @@ p mark {
 
 #projects-section #work-sel {
   color: black;
+  font-size: 26px;
   font-weight: 400;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #spotify-player {
   padding-left: 15px;
 }
 
+/* TO FIND THE RIGHT PARAMETERS BELOW (SEE COMMENT) */
+
 #grid-container {
-  min-width: 380px;
+  min-width: 375px;
+
+  /* THIS IS THE CODE THAT MAKES IT CENTERED AND RESPONSIVE! JUST NEED TO FIND THE RIGHT SETTING TO PUT 3 OR 2 OR 1 PROJECTS PER LINE DEPENDING ON THE SIZE OF THE SCREEN, MAYBE USE @MEDIA RULE??*/
+
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+
 }
 
 #grid {
@@ -162,10 +174,15 @@ p mark {
 
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    .grid-item {width: 350px;}
+    body {padding: 0;}
+    #projects-section {padding: 0;}
+    #projects-section #work-sel {max-width: 100vw; font-size: 19px;}
+    #main-container {max-width: 100vw; padding: 0px;}
+    #grid-container {max-width: 100vw;}
+    .grid-item {margin-right: 0px; width: 345px;}
     .grid-item img {max-height: 200px;}
-    #intro p {font-size: 17px;}
-    #nav-ban {min-width: 400px;}
+    #intro p {font-size: 22px;}
+    #intro {min-width: 100vw;}
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {...}
