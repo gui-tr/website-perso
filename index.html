@@ -10,7 +10,7 @@
     <!--------- Font ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500;600&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!------- CSS/Bootstrap ------->
     <link rel="stylesheet" href="styles.css">
@@ -24,14 +24,18 @@
 
   <div class="container-fluid" id="nav-ban">
     <div class="row">
-        <div class="col-md-12 justify-content-left" id="menu-items">
+      <div class="col justify-content-left" id="menu-title">
+        
+      </div>
+
+        <div class="col justify-content-end" id="menu-items">
           <a class="" id="github" href="https://github.com/gui-tr" target="_blank"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/github.png" alt="" style="width:30px;"></a>
 
-          <a class="" id="linkedin" href="https://www.linkedin.com/in/guillaume-trionfo-4111b0152/" target="_blank"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/linkedin.png" alt="" style="width:30px;"></a>
+          <a class="" id="linkedin" href="https://www.linkedin.com/in/guillaume-trionfo-4111b0152/" target="_blank"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/linkedin_logo.png" alt="" style="width:30px;"></a>
 
-          <a class="" id="email" href="mailto:gtrionfo@proton.me"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/mail.png" alt="" style="width:30px;"></a>
-
+          <a class="" id="email" href="mailto:gtrionfo@proton.me"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/email-icon-v2.png" alt="" style="width:40px;"></a>
       </div>
+
     </div>
   </div>
 
@@ -41,30 +45,28 @@
     <!------------------------->
     <!--------- INTRO --------->
 
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="col-sm-12 d-flex justify-content-left" id="intro">
-          <p>Hi, </br>
-          </br>My name is <mark>Guillaume Trionfo</mark>
-          </br>I am a <strong>musician</strong>,<strong> producer</strong> & <strong>web developer</strong>.</br>
+    <div class="container-fluid" id="main-container">
+      <div class="row d-flex justify-content-center" id="intro">
+        <div class="col-sm-12 d-flex justify-content-center">
+        <p></br></br>Hi! I'm <mark>Guillaume Trionfo</mark>,
+          </br>a musician, producer & web developer.</br>
           </br>I have graduated from here > <a href="https://www.gsmd.ac.uk/" style="text-decoration: none;" target="_blank">🏢</a>
           </br>and am now studying here > <a href="https://launchschool.com/employers" style="text-decoration: none;" target="_blank">💻</a></br></p>
         </div>
-        
-        <div class="col-sm-12 d-flex justify-content-left" id="intro">
-          <p style="font-size: 18px;">Here's a selection of my work:</p>
-        </div>
       </div>
-    </div>
 
     <!------------------------->
     <!--------- WORK ---------->
 
-    <div class="container-fluid d-flex justify-content-center">
+    <div class="container" id="projects-section">
       <div class="row d-flex justify-content-center">
-        <div class="col-sm-12" id="grid-container">
-          <div class="grid">
+        <div class="col-sm-12 d-flex justify-content-center align-items-bottom">
+          <p id="work-sel" style="font-size: 26px; padding-top: 30px;">Here's a selection of my work:</p>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-12 justify-content-center" id="grid-container">
             <!--Project 1-->
             <div class="grid-item">
               <div class="container">
@@ -175,7 +177,11 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-12 justify-content-center" id="grid-container">
             <!--Project 4-->
             <div class="grid-item">
               <div class="container">
@@ -284,7 +290,11 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-12 justify-content-center" id="grid-container">
             <!--Project 7-->
             <div class="grid-item">
               <div class="container">
@@ -322,10 +332,9 @@
                 </div>
               </div>
             </div>
-
-          </div>
         </div>
       </div>
+
     </div>
 
     <!-------- FOOTER --------->
