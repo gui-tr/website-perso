@@ -107,33 +107,31 @@ p mark {
 
   /* THIS IS THE CODE THAT MAKES IT CENTERED AND RESPONSIVE! JUST NEED TO FIND THE RIGHT SETTING TO PUT 3 OR 2 OR 1 PROJECTS PER LINE DEPENDING ON THE SIZE OF THE SCREEN, MAYBE USE @MEDIA RULE??*/
 
+  display: flex;
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-
+  
 }
 
-#grid {
-  width: 100%;
-}
 
 .grid-item {
   /* width: 410px; */
-  width: 100%;
   width: 400px;
   height: 500px;
   margin: 15px;
 
-  float: left;
   /*background: rgb(159, 33, 255);*/
   background-color: #1900ff;
   background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
+
   border: 1px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
 
 .grid-item img {
+  max-width: 345px;
   max-height: 260px;
 }
 
