@@ -17,7 +17,6 @@ body {
 
 #nav-ban {
   background-color: white;
-  background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
 
   height: 60px;
   width: 100%;
@@ -53,12 +52,10 @@ body {
 #intro {
   min-width: 100vw;
   height: 100vh;
-  background-color: #1900ff;
-  background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
+  background-color: #2764D9;
 }
 
 #intro p {
-  padding-left: 30px;
   padding-top: 29px;
   font-size: 50px;
 }
@@ -79,11 +76,12 @@ p mark {
 /* PROJECTS */
 
 #main-container {
-  background-color: white;
-  background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
+  background-color: white;  
+  padding-bottom: 15px;
 }
 
 #projects-section p {
+  max-width: 100vw;
   color: white;
 }
 
@@ -111,7 +109,6 @@ p mark {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  
 }
 
 
@@ -122,12 +119,11 @@ p mark {
   margin: 15px;
 
   /*background: rgb(159, 33, 255);*/
-  background-color: #1900ff;
-  background-image: url("https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/white-sand.png");
+  background-color: black;
 
   border: 1px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .grid-item img {
@@ -139,7 +135,7 @@ p mark {
   font-family: 'Albert Sans', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: black;
+  color: white;
 
   padding-top: 15px;
   padding-left: 10px;
@@ -160,32 +156,54 @@ p mark {
 
 .project-info strong {
   font-weight: 600;
-
 }
 
-#role {
+#role strong {
+  text-align: center;
   color: white;
-  text-align: left;
+
 }
+
 
 /* @MEDIA RULES */
+
+  /* Fold Screen (Galaxy Fold etc...)*/
+  @media only screen and (max-width: 320px) {
+    
+    body {max-width: 100vw;}
+    #intro {max-width: 100vw;}
+    #grid-container {max-width: 100vw;}
+    .grid-item {margin: 0; max-width: 100%;}
+    .grid-item img {max-height: 50px; max-width: 250px;}
+    #menu-items img {max-width: 25px;}
+    #nav-ban {height: 50px;}
+
+  }
 
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     body {padding: 0;}
     #projects-section {padding: 0;}
     #projects-section #work-sel {max-width: 100vw; font-size: 19px;}
-    #main-container {max-width: 100vw; padding: 0px;}
-    #grid-container {max-width: 100vw;}
-    .grid-item {margin-right: 0px; width: 345px;}
+    #grid-container {padding: 0px; min-width: 100vw;}
+    .grid-item {margin: 15px 0px 0px 0px; width: 345px;}
     .grid-item img {max-height: 200px;}
-    #intro p {font-size: 22px;}
+    #intro p {font-size: 22px; padding-left: 15px;}
     #intro {min-width: 100vw;}
+    #menu-items {padding-right: 15px;}
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {...}
+  @media only screen and (min-width: 600px) {
+    #intro p {padding-left: 30px;}
+  }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {...}
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #intro p {font-size: 40px; padding-left: 30px;}
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 912px) {
+    #intro p {font-size: 40px; padding-left: 30px;}
+  }
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {...}
   /* Extra large devices (large laptops and desktops, 1200px and up) */
