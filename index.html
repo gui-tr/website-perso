@@ -10,7 +10,7 @@
     <!--------- Font ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500;600&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!------- CSS/Bootstrap ------->
     <link rel="stylesheet" href="styles.css">
@@ -24,21 +24,26 @@
 
   <div class="container-fluid" id="nav-ban">
     <div class="row">
-      <div class="col justify-content-left" id="menu-title">
-        
+
+      <div class="col">
+        <div class="" id="menu-title">
+          <a href="#top">GUILLAUME TRIONFO</a>
+        </div>
       </div>
 
-        <div class="col justify-content-end" id="menu-items">
-          <a class="" id="github" href="https://github.com/gui-tr" target="_blank"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/github.png" alt="" style="width:30px;"></a>
+        <div class="col" id="menu-items">
+          <a class="" id="github" href="https://github.com/gui-tr" target="_blank"><img src="../website_perso_v2/img/github.png" alt="" style="width: 25px;"></a>
 
-          <a class="" id="linkedin" href="https://www.linkedin.com/in/guillaume-trionfo-4111b0152/" target="_blank"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/linkedin_logo.png" alt="" style="width:30px;"></a>
+          <a class="" id="linkedin" href="https://www.linkedin.com/in/guillaume-trionfo-4111b0152/" target="_blank"><img src="../website_perso_v2/img/linkedin.png" alt="" style="width:25px;"></a>
+        </div>
 
-          <a class="" id="email" href="mailto:gtrionfo@proton.me"><img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/email-icon-v2.png" alt="" style="width:40px;"></a>
+        <div class="col">
+          <a id="contact_button" href="mailto:gtrionfo@proton.me">CONTACT</a>
+        </div>
       </div>
 
     </div>
   </div>
-
 
     <!------------------------->
     <!--------- INTRO --------->
@@ -46,10 +51,10 @@
     <div class="container-fluid" id="main-container">
       <div class="row d-flex justify-content-center" id="intro">
         <div class="col-sm-12 d-flex justify-content-center">
-        <p></br></br>Hi! I'm <mark>Guillaume Trionfo</mark>,
-          </br>a musician, producer & web developer.</br>
-          </br>I have graduated from here > <a href="https://www.gsmd.ac.uk/" style="text-decoration: none;" target="_blank">🏢</a>
-          </br>and am now studying here > <a href="https://launchschool.com/employers" style="text-decoration: none;" target="_blank">💻</a></br></p>
+        <p></br></br>Hi! I'm Guillaume Trionfo,
+          </br>a <strong>musician</strong>, <strong>producer</strong> & <strong>web developer</strong>.</br>
+          </br>I have graduated from here - <a id="academy-logo" href="https://www.gsmd.ac.uk/" style="text-decoration: none;" target="_blank"><img id="school-logo" src="../website_perso_v2/img/academy-logo.png" alt=""></a>
+          </br>and am now studying here - <a href="https://launchschool.com/employers" style="text-decoration: none;" target="_blank"><img id="computer-logo" src="../website_perso_v2/img/computer-logo.png" alt=""></a></br></p>
         </div>
       </div>
 
@@ -63,38 +68,36 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <div class="col" id="grid-container">
+
             <!--Project 1-->
-            <div class="grid-item">
+            <div class="grid-item" id="project-type-music">
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
 
-                    <!--Project Title-->
-                    <h6 class="project-title">pu44in</h6>
-
                     <!--Spotify Player-->
-                    <iframe style="border-radius: 10px; margin-left:10px; margin-right:15px;" src="https://open.spotify.com/embed/artist/2hgLmBmAhGFZw749Oakdd5?utm_source=generator&theme=0" width="95%" height="240" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe style="border-radius: 10px;" src="https://open.spotify.com/embed/artist/2hgLmBmAhGFZw749Oakdd5?utm_source=generator&theme=0" width="100%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    
+                    <!--Project Title-->
+                    <h6 class="project-title">PU44IN</h6>
 
                     <!--Spotify Info-->
                     <div class="project-info">
-                      <p><strong>lofi beats - solo project</strong></br>4M+ streams on Spotify.</br>💿 EU & US record labels.</p>
-                      <div class="container">
-                        <div class="row">
 
-                          <!--Roles-->
-                          <div class="col-6" style="padding-left: 0;">
-                            <p id="role"><strong>composition</strong></p>
-                            <p id="role"><strong>production</strong></p>
-                          </div>
-                          <div class="col-6" style="padding-left: 0;">
-                            <p id="role"><strong>mixing</strong></p>
-                            <p id="role"><strong>mastering</strong></p>
-                          </div>
-                        </div>
+                      <p><strong>lofi beats - solo project</strong></p>
+                      <p>4M+ streams on Spotify.</p>
+                      <p>EU & US record labels.</p>
 
+                      <!--Roles-->
+                      <div class="role-section">
+                        <p id="role">composition</p>
+                        <p id="role">production</p>
+                        <p id="role">mixing</p>
+                        <p id="role">mastering</p>
                       </div>
+
                     </div>
 
                   </div>
@@ -103,74 +106,71 @@
             </div>
 
             <!--Project 2-->
-            <div class="grid-item">
+            <div class="grid-item" id="project-type-music">
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
 
-                    <!--Project Title-->
-                    <h6 class="project-title">highgates</h6>
-
                     <!--Spotify Player-->
-                    <iframe style="border-radius: 10px; margin-left:10px; margin-right:15px;" src="https://open.spotify.com/embed/artist/6GXhi2fBJnA3c7OOcqILln?utm_source=generator&theme=0" width="95%" height="240" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe style="border-radius: 10px;" src="https://open.spotify.com/embed/artist/6GXhi2fBJnA3c7OOcqILln?utm_source=generator&theme=0" width="100%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                    
+                    <!--Project Title-->
+                    <h6 class="project-title">HIGHGATES</h6>
 
                     <!--Project Info-->
                     <div class="project-info">
-                      <p><strong>hip-hop - solo project</strong></br>100K streams on Spotify.</br>collaboration with artists.</p>
-                      <div class="container">
-                        <div class="row">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>composition</strong></p>
-                            <p id="role"><strong>production</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>mixing</strong></p>
-                            <p id="role"><strong>mastering</strong></p>
-                          </div>
-                        </div>
+                      <p><strong>hip-hop - pop</strong></p>
+                      <p>100K streams on Spotify.</p>
+                      <p>collaboration with artists.</p>
 
+                      <!--Roles-->
+                      <div class="role-section">
+                        <p id="role">composition</p>
+                        <p id="role">production</p>
+                        <p id="role">mixing</p>
+                        <p id="role">mastering</p>
                       </div>
+
                     </div>
 
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
 
           <div class="col" id="grid-container">
+
             <!--Project 3-->
             <div class="grid-item">
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
 
-                    <!--Project Title-->
-                    <h6 class="project-title">Let me go...Down</h6>
-
                     <!--Image-->
-                    <div>
-                    <img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/lmgd-3.jpg" style="height: 240px; border-radius: 10px; margin-left:10px; margin-right:15px;"></img>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/252202640?h=5d24c698c2&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <!--Project Title-->
+                    <h6 class="project-title">LET ME GO... DOWN</h6>
+
                   </div>
 
-                    <!--Project Info-->
-                    <div class="project-info">
-                      <p><strong>performance art</strong></br>with Robert Steinberger</br>Premiered @ Réunion, Zürich (CH)</br>Le Foyer/Wagner & Friends</p>
-                      <div class="container">
-                        <div class="row">
+                  <!--Project Info-->
+                  <div class="project-info">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>performance</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>composition</strong></p>
-                          </div>
-                        </div>
+                    <p><strong>performance art</strong></p>
+                    <p>with Robert Steinberger</p>
+                    <p>premiered @ Réunion, Zürich (CH)</p>
+                    <p>hosted by Le Foyer/Wagner & Friends</p>
 
-                      </div>
+                    <!--Roles-->
+                    <div class="role-section">
+                      <p id="role">performance</p>
+                      <p id="role">sound design</p>
+                      <p id="role">arrangement</p>
                     </div>
 
                   </div>
@@ -184,69 +184,63 @@
                 <div class="row">
                   <div class="col-xs-12">
 
-                    <!--Project Title-->
-                    <h6 class="project-title">Il Fiore Oltre</h6>
-
                     <!--Image-->
-                    <div>
-                    <img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/ifo.jpg" style="height: 240px; border-radius: 10px; margin-left:10px; margin-right:15px;"></img>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/309132940?h=a72a8ebdd1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <!--Project Title-->
+                    <h6 class="project-title">IL FIORE OLTRE</h6>
+
                   </div>
 
-                    <!--Project Info-->
-                    <div class="project-info">
-                      <p><strong>performance / musical</strong>
-                      </br>by Tommaso Giacopini</br>premiered @ Teatro San Materno (CH)</p>
-                      <div class="container">
-                        <div class="row">
+                  <!--Project Info-->
+                  <div class="project-info">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>performance</strong></p>
-                            <p id="role"><strong>arrangement</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>sound design</strong></p>
-                          </div>
-                        </div>
+                    <p><strong>performance / musical</strong></p>
+                    <p>by Tommaso Giacopini</p>
+                    <p>premiered @ Teatro San Materno (CH)</p>
 
-                      </div>
+                    <!--Roles-->
+                    <div class="role-section">
+                      <p id="role">performance</p>
+                      <p id="role">sound design</p>
+                      <p id="role">arrangement</p>
                     </div>
 
                   </div>
+
                 </div>
               </div>
             </div>
+
           </div>
 
           <div class="col" id="grid-container">
+
             <!--Project 5-->
-            <div class="grid-item">
+            <div class="grid-item" id="project-type-music">
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!--Spotify Player-->
+                    <iframe style="border-radius: 10px;" src="https://open.spotify.com/embed/artist/0fLur7bIs8Ipv0YxF4Zcav?utm_source=generator&theme=0" width="100%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
 
                     <!--Project Title-->
                     <h6 class="project-title">TUITION</h6>
 
-                    <!--Spotify Player-->
-                    <iframe style="border-radius: 10px; margin-left:10px; margin-right:15px;" src="https://open.spotify.com/embed/artist/0fLur7bIs8Ipv0YxF4Zcav?utm_source=generator&theme=0" width="95%" height="240" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  </div>
 
-                    <!--Project Info-->
-                    <div class="project-info">
-                      <p><strong>pop band from London</strong></br>💿 Mutual Intentions (NO).</p>
-                      <div class="container">
-                        <div class="row">
+                  <!--Project Info-->
+                  <div class="project-info">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>production</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>mixing</strong></p>
-                          </div>
-                        </div>
+                    <p><strong>pop band from London</strong></p>
+                    <p>record label: Mutual Intentions (NO).</p>
 
-                      </div>
+                    <!--Roles-->
+                    <div class="role-section">
+                      <p id="role">production</p>
+                      <p id="role">mixing</p>
                     </div>
 
                   </div>
@@ -254,83 +248,80 @@
               </div>
             </div>
 
+
             <!--Project 6-->
-            <div class="grid-item">
+            <div class="grid-item" id="project-type-music">
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!--Spotify Player-->
+                    <iframe style="border-radius: 10px;" src="https://open.spotify.com/embed/artist/3uEg6ku9Hp6gC9yACDy9Cn?utm_source=generator&theme=0" width="100%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
                     <!--Project Title-->
                     <h6 class="project-title">OH LA KANADA</h6>
 
-                    <!--Spotify Player-->
-                    <iframe style="border-radius: 10px; margin-left:10px; margin-right:15px;" src="https://open.spotify.com/embed/artist/3uEg6ku9Hp6gC9yACDy9Cn?utm_source=generator&theme=0" width="95%" height="240" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  </div>
 
-                    <!--Project Info-->
-                    <div class="project-info">
-                      <p><strong>Alt.-Pop band from London</strong></br>600K+ streams on Spotify.</p>
-                      <div class="container">
-                        <div class="row">
+                  <!--Project Info-->
+                  <div class="project-info">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>co-founder</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>drummer</strong></p>
-                          </div>
-                        </div>
-
-                      </div>
+                    <p><strong>alt.-pop band from London</strong></p>
+                    <p>600K+ streams on Spotify.</p>
+                  
+                    <!--Roles-->
+                    <div class="role-section">
+                      <p id="role">co-founder</p>
+                      <p id="role">drummer</p>
                     </div>
 
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
 
           <div class="col" id="grid-container">
+            
             <!--Project 7-->
             <div class="grid-item">
+              
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12">
 
-                    <!--Project Title-->
-                    <h6 class="project-title">Zone Protégée</h6>
-
                     <!--Image-->
-                    <div>
-                    <img src="https://media-apps-sites.fra1.digitaloceanspaces.com/website-perso/zp.png" style="height: 240px; border-radius: 10px; margin-left:10px; margin-right:15px;"></img>
-                  </div>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/167921442?h=1cc61ba216&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <!--Project Title-->
+                    <h6 class="project-title">ZONE PROTÉGÉE</h6>
 
                     <!--Project Info-->
                     <div class="project-info">
-                      <p><strong>play / theatre</strong>
-                      </br>by Aymeric Trionfo</br>premiered @ Les Tanneurs (BE)</p>
-                      <div class="container">
-                        <div class="row">
 
-                          <!--Roles-->
-                          <div class="col-6">
-                            <p id="role"><strong>composition</strong></p>
-                          </div>
-                          <div class="col-6">
-                            <p id="role"><strong>sound design</strong></p>
-                          </div>
-                        </div>
+                      <p><strong>play / theatre</strong></p>
+                      <p>by Aymeric Trionfo</p>
+                      <p>premiered @ Les Tanneurs (BE)</p>
 
+                      <!--Roles-->
+                      <div class="role-section">
+                        <p id="role">composition</p>
+                        <p id="role">sound design</p>
                       </div>
+
                     </div>
 
                   </div>
                 </div>
               </div>
             </div>
-        </div>
-      </div>
 
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
     <!-------- FOOTER --------->
