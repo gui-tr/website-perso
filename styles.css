@@ -28,6 +28,8 @@ body {
 
   position: fixed;
   top: 0;
+
+  z-index: 2;
 }
 
 #menu-title {
@@ -120,7 +122,7 @@ p mark {
 
 #main-container {
   background-color: white;  
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 
 #projects-section p {
@@ -205,8 +207,6 @@ p mark {
   line-height: 23px;
 }
 
-
-
 .project-info strong {
   font-weight: 700;
 }
@@ -219,6 +219,41 @@ p mark {
   background-color: #D2D9DD;
   border-radius: 50px;
 }
+
+
+/* FOOTER */
+
+#footer {
+  background: linear-gradient(180deg, #34576D 0%, #000000 100%);
+  padding-left: 34px;
+  padding-top: 125px;
+
+  height: 325px;
+  width: 100%;
+
+  margin-top: 100px;
+}
+
+#copyright {
+  padding-top: 100px;
+  font-size: 12px;
+  color: grey;
+}
+
+#get-in-touch {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: #92F1C5;
+  border-radius: 2px;
+  padding: 20px 55px;
+}
+
+
+
+
 
 
 /* @MEDIA RULES */
